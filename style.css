@@ -1,0 +1,92 @@
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family: 'Alegreya Sans SC';
+	margin: 45px 180px 0px 180px;
+}
+
+h1{
+	display: inline-block;
+	color: #FFF;
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-top: 12.5px;
+}
+
+#nav
+{
+	float: right;
+	display: inline-block;
+	margin-top:15px;
+}
+
+#nav ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#nav ul a
+{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	font-weight:500;
+	font-size:20px;
+	line-height:32px;
+}
+
+#nav ul li
+{
+	position:relative;
+	float:left;
+	margin:0px 15px;
+	padding:0
+}
+
+#nav ul li a:hover {
+  color: white;
+}
+
+
+#nav ul li a:hover, a:focus, a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+#nav ul li a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+#nav ul li a {
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+#nav ul li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+#nav ul li a:active::before {
+    background-color: #FFF;
+}
+#nav ul li a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
