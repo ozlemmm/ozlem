@@ -100,6 +100,11 @@ p {
 	font-size: 18px;
 }
 
+section p {
+	padding-left: 20px;
+	color: #000;
+}
+
 ul.liste {
 	opacity: 0.6;
 	list-style: none;
@@ -152,3 +157,13 @@ h2.sayfa-basligi::after {
 h2.sayfa-basligi:hover::after {
   width: 30%;
 }
+
+
+.mySlides {
+	border-radius: 2px;
+	background-color: #FFF;
+	padding: 5px;
+}
+
+.left {position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.right {position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
