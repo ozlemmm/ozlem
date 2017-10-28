@@ -1,3 +1,6 @@
+
+
+
 html { 
   background: url(background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -89,4 +92,63 @@ h1{
 #nav ul li a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
+}
+
+
+p {
+	color: #FFF;
+	font-size: 18px;
+}
+
+ul.liste {
+	opacity: 0.6;
+	list-style: none;
+	color: #000;
+	font-weight: 600;
+	margin: 20px 15px;
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+
+section.icerik{
+	margin-top: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+h2.sayfa-basligi {
+  color: #000;
+  text-align: center;
+  position: relative;
+  line-height: 2;
+}
+h2.sayfa-basligi::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #dfdfdf;
+}
+h2.sayfa-basligi::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: #12CFE9;
+  transition: all 0.3s ease 0s;
+}
+h2.sayfa-basligi:hover::after {
+  width: 30%;
 }
